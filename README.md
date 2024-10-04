@@ -6,7 +6,9 @@
 
 2) Далее просто запускаем скрипт.
 
-Пример работы:
+
+
+Пример работы скрипта:
 <img width="1330" alt="image" src="https://github.com/user-attachments/assets/98e66bab-9d7a-4536-8fc4-e4e2a7bbb647">
 
 <img width="1330" alt="image" src="https://github.com/user-attachments/assets/0a65a887-9033-4707-81fa-b96cb6ef6eed">
