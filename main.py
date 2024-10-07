@@ -32,8 +32,10 @@ def api_request_handler(smart_console_host, smart_console_login, smart_console_p
                 return False, api_response_data
 
 break_point = False
+counter = 0
 
 while True:
+    counter += 1
     if break_point == False:
         output = api_request_handler(smart_console_host, smart_console_login, smart_console_password, 'show-access-rulebase', layer, disabled_rules)
         rules = output[1]['rulebase']
@@ -44,4 +46,8 @@ while True:
 
     elif break_point == True:
         output = api_request_handler(smart_console_host, smart_console_login, smart_console_password, 'set-access-rule', layer, disabled_rules)
+        break
+
+    elif counter >= 2:
+        print('No disabled rules found')
         break
